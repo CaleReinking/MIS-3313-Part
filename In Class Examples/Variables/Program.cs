@@ -29,7 +29,19 @@ namespace Variables
 
             Console.WriteLine(fullName + "has the favorite number of" + favoriteNumber
                 + "Which equates to a crazy number" + crazyNumber);
-            
+
+
+            // Make it Dynamic 
+            Console.WriteLine("Please enter your first name: >>");
+            string firstName = Console.ReadLine();
+            Console.WriteLine("Please enter your last name:  >>");
+           lastName= Console.ReadLine();
+            Console.WriteLine("Please enter your fav number: >>");
+           favoriteNumber= Console.ReadLine();
+            string fullName = firstName + "" + lastName;
+            Console.WriteLine(fullName + "has the favorite number of" + favoriteNumber
+               + "Which equates to a crazy number" + crazyNumber);
+
             Console.ReadKey();
         }
     }
