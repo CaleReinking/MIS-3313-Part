@@ -14,7 +14,7 @@ namespace Homework_1_2._0
             double quizzes;
             double midterm;
             double final;
-            string finalgrade;
+            double finalgrade;
 
             Console.WriteLine("What is your first name?");
             firstName = Convert.ToString(Console.ReadLine());
@@ -40,8 +40,8 @@ namespace Homework_1_2._0
             Console.WriteLine("what is your overall percentage grade for final?");
             final = Convert.ToDouble(Console.ReadLine());
 
-            finalgrade = Convert.ToDouble((homework * .2) + (participation * .1) + (quizzes * .1) + (midterm * .3) + (final * .3));
-            Console.WriteLine($"{firstName} {lastname} with ID number {id} your final grade is {finalgrade}");
+            finalgrade = (homework * .2) + (participation * .1) + (quizzes * .1) + (midterm * .3) + (final * .3);
+            Console.WriteLine($"{firstName} {lastname} with ID number {id} your final grade is {finalgrade.ToString("P2")}");
 
             Console.ReadKey();
 
