@@ -30,9 +30,9 @@ namespace _Participation__String_Manipulation
             else
             {
                 Console.WriteLine($"Sorry, I could not find your word {place} ");
-                for (int i = 0; i > answer.Length; i--)
+                for (int i = 0; i > place.Length; i--)
                 {
-                    Console.WriteLine(answer[i]);
+                    Console.WriteLine(place[i]);
 
                 }
             }
