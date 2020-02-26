@@ -9,17 +9,19 @@ namespace Loops
     class Program
     {
         static void Main(string[] args)
-        {   
+        {
             Console.WriteLine("What number do you want to count to?");
             int threshold = Convert.ToInt32(Console.ReadLine());
 
             for (int i = 1; i <= threshold; i++)
             {
-                Console.Write (i + " ");
+                Console.Write(i + " ");
 
             }
             Console.ReadKey();
-
+        
+           
+       
             double sum = 0;
             string answer;
 
