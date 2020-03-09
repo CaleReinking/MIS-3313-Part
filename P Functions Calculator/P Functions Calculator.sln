@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.28010.2050
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "P Functions Calculator", "P Functions Calculator\P Functions Calculator.csproj", "{94D8BB0F-DF9F-4F57-B73F-25F25FC8D357}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{94D8BB0F-DF9F-4F57-B73F-25F25FC8D357}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{94D8BB0F-DF9F-4F57-B73F-25F25FC8D357}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{94D8BB0F-DF9F-4F57-B73F-25F25FC8D357}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{94D8BB0F-DF9F-4F57-B73F-25F25FC8D357}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {66952595-2F0E-4E13-8088-37F2BDB7B450}
+	EndGlobalSection
+EndGlobal
