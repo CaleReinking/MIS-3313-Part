@@ -12,14 +12,19 @@ namespace P_Functions_Calculator
         {
             string answer = "";
             double result = 0;
-
+            double first =0;
+            bool shouldaskforfirst = true;
             do
             {
                 Console.WriteLine("What function do you wish to use?");
                 string type = Console.ReadLine().ToLower();
 
-                Console.WriteLine("Enter your first value >>");
-                double first = Convert.ToDouble(Console.ReadLine());
+                if (shouldaskforfirst == true)
+                {
+                    Console.WriteLine("Enter your first value >>");
+                    first = Convert.ToDouble(Console.ReadLine());
+                }
+                
 
                 Console.WriteLine("enter your second value >>");
                 double second = Convert.ToDouble(Console.ReadLine());
@@ -43,19 +48,32 @@ namespace P_Functions_Calculator
                 {
                     result = Divide(first, second);
                 }
-                
+                else
+                {
+                    Console.WriteLine("Error");
+                }
                 Console.WriteLine(result);
 
                 Console.WriteLine("Do you have another function you wish to run?");
               answer = Console.ReadLine().ToLower();
-
-                Console.WriteLine("Do you want to reuse your result as the first number?");
-               string answer2 = Console.ReadLine().ToLower();
+                string answer2 = "";
+                if (answer == "yes")
+                {
+                    Console.WriteLine("Do you want to reuse your result as the first number?");
+                     answer2 = Console.ReadLine().ToLower();
+                }
+                
 
                 if (answer2 == "yes")
                 {
                     answer = "yes";
                    first = result;
+                    shouldaskforfirst = false;
+                }
+                else
+                {
+                    shouldaskforfirst = true;
+                    answer = "no";
                 }
               
             } while (answer == "yes");
@@ -83,6 +101,9 @@ namespace P_Functions_Calculator
         {
             return first/second;
         }
-        
+        static void DeveloperInformation(string developerName, string className, string dateofWriting)
+        {
+            Console.WriteLine($"{developerName} wrote this in {className} on the day of {dateofWriting}");
+        }
     }
 }
