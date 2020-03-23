@@ -17,8 +17,8 @@ namespace _Participation__String_Manipulation
 
             Console.WriteLine("what word do you want to look for in the above sentence");
             string place =Console.ReadLine();
-            
-            
+            string backwards = place;
+
 
             if (funny.Contains(place))
             {
@@ -30,11 +30,12 @@ namespace _Participation__String_Manipulation
             else
             {
                 Console.WriteLine($"Sorry, I could not find your word {place} ");
-                for (int i = 0; i > place.Length; i--)
-                {
-                    Console.WriteLine(place[i]);
+                int index = place.Length - 1;
+                backwards += place[index];
+                index++;
+                Console.WriteLine(backwards);
 
-                }
+
             }
 
 

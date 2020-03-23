@@ -1,32 +1,33 @@
 ﻿using System;
 
-namespace Palindrome2._0
+namespace Palindrome3._0
 {
     class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Please enter a phrase");
+            Console.WriteLine("please enter phrase");
             string phrase = Console.ReadLine().ToLower();
-            string backwards= "";
-            
-           int index = phrase.Length - 1;
+            int index = phrase.Length - 1;
+            string backwards = "";
 
             while (index>=0)
             {
-                backwards += phrase[index];
+               backwards+= phrase[index];
                 index--;
             }
-
             if (backwards == phrase)
             {
-                Console.WriteLine("Palendrome");
+                Console.WriteLine("Palindrome");
+
             }
 
-    else
-	{
-             Console.WriteLine("FAT NO");
-	}
+            else
+            {
+                Console.WriteLine("nope");
+            }
+
+
             Console.ReadKey();
         }
     }

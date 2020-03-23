@@ -12,21 +12,18 @@ namespace Savings_Review
             double rate = Convert.ToDouble(Console.ReadLine())/100;
             Console.WriteLine("For how many years would you like to save for?");
             double years = Convert.ToDouble(Console.ReadLine());
-            double currentYear = 1;
+            double currentYear = years*12;
             double amountsaved = 0;
-            for (int i = 1; i < years*12; i++)
+            for (int i = 1; i <= years*12; i++)
             {
-                
-               amountsaved += money * 4;
+                amountsaved += money * 4;
                 amountsaved += amountsaved * rate;
+                Console.WriteLine($"After {i} months in the year {years}, saved {amountsaved} ");
 
-                Console.WriteLine($"During the {i} month of the {currentYear} you saved {amountsaved.ToString("C2")} ");
-
-                if (i % 12 == 0)
+                if (currentYear % 12 == 0)
                 {
                     currentYear++;
                 }
-
             }
             Console.ReadKey();
         }
