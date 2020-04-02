@@ -23,26 +23,23 @@ namespace In_Class_Part_1
             {
                 userGuess = 1 ;
 
-                    }
+           }
             Random rand = new Random();
 
             int randomNumber = rand.Next(0, 2);
 
-          
-            if  (userGuess == randomNumber)
-            {
-                Console.WriteLine("You are Correct");
-            }
-               else
-            {
-                Console.WriteLine("You are Wrong");
-            }
+            
+                  if (userGuess == randomNumber)
+                    {
+                      Console.WriteLine("You are Correct");
+                    }
+                    else
+                    {
+                        Console.WriteLine("You are Wrong");
+                    }
 
-
-
-
-              Console.ReadKey();
-
+                  
+            Console.ReadKey();
         }
     }
 }
