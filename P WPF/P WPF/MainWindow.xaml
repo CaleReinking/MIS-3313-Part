@@ -1,0 +1,24 @@
+﻿<Window x:Class="P_WPF.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:P_WPF"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="800">
+    <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF0D7B2D" Offset="0.13"/>
+                <GradientStop Color="#FFF8F3F3" Offset="0.662"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="LBL" Content="WPF Participation" HorizontalAlignment="Center" Margin="0,56,0,0" VerticalAlignment="Top" FontSize="36" Background="#FFDD2A2A"/>
+        <Button Content="Process" HorizontalAlignment="Left" Margin="604,188,0,0" VerticalAlignment="Top" FontSize="22" Height="29" Width="145"/>
+        <Label x:Name="lbl1" Content="Favorite Color" HorizontalAlignment="Left" Margin="110,188,0,0" VerticalAlignment="Top" FontSize="22" Background="#FFAA2222"/>
+        <Label x:Name="lbl" Content="Name" HorizontalAlignment="Left" Margin="148,310,0,0" VerticalAlignment="Top" Background="#FFB02424" FontSize="22" RenderTransformOrigin="-0.084,0.288"/>
+        <TextBox x:Name="NameBox" Text="" TextWrapping="Wrap" Width="120" Margin="313,310,367,73" RenderTransformOrigin="0.229,5.908" TextChanged="txt1_TextChanged"/>
+        <TextBox x:Name="ColorBox" HorizontalAlignment="Center" Text="" TextWrapping="Wrap" VerticalAlignment="Center" Width="120" TextChanged="txt_TextChanged"/>
+
+    </Grid>
+</Window>
