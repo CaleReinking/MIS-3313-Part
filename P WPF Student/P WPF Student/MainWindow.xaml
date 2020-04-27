@@ -7,6 +7,27 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF53647E" Offset="0.07"/>
+                <GradientStop Color="#FFC78A8A" Offset="1"/>
+                <GradientStop Color="#FF9F5D5D" Offset="0.427"/>
+                <GradientStop Color="#FFAE669A" Offset="0.7"/>
+                <GradientStop Color="#FF443D8B" Offset="0.262"/>
+                <GradientStop Color="#FF8D5E9B" Offset="0.802"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Label x:Name="Title" Content="Welcome Please Enter Student Info Below" HorizontalAlignment="Center" Margin="0,43,0,0" VerticalAlignment="Top" Background="#FFE2ACAC" FontSize="24"/>
+        <Label Content="StudentID:" HorizontalAlignment="Left" Margin="175,112,0,0" VerticalAlignment="Top" Background="#FFF13E3E" FontSize="18"/>
+        <Label Content="First Name:" HorizontalAlignment="Left" Margin="170,151,0,0" VerticalAlignment="Top" Background="#FFE74040" FontSize="18"/>
+        <Label Content="Last Name:" HorizontalAlignment="Left" Margin="170,193,0,0" VerticalAlignment="Top" Background="#FFE42E2E" FontSize="18"/>
+        <Label Content="Favorite Color:" HorizontalAlignment="Left" Margin="159,232,0,0" VerticalAlignment="Top" Background="#FFE62E2E" FontSize="18" RenderTransformOrigin="-0.153,0.009"/>
+        <TextBox x:Name="txtStudentID" HorizontalAlignment="Left" Margin="280,112,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="34"/>
+        <TextBox x:Name="txtFirstName" HorizontalAlignment="Left" Margin="280,151,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="35" TextChanged="TextBox_TextChanged"/>
+        <TextBox x:Name="txtLastName" HorizontalAlignment="Left" Margin="280,193,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="160" Height="34"/>
+        <TextBox x:Name="txtFavoriteColor" HorizontalAlignment="Left" Margin="288,232,0,0" Text="" TextWrapping="Wrap" VerticalAlignment="Top" Width="152" Height="34"/>
+        <Button x:Name="btnAddStudent" Content="Add Student" HorizontalAlignment="Left" Margin="304,296,0,0" VerticalAlignment="Top" FontSize="24" Click="btnAddStudent_Click"/>
+        <ListBox Margin="500,112,46,168"/>
 
     </Grid>
 </Window>

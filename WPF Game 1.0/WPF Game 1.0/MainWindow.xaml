@@ -30,7 +30,7 @@
         <Button x:Name="btnbtmleft" Content="" HorizontalAlignment="Left" Margin="46,231,0,0" VerticalAlignment="Top" Background="#FF7177D4" Height="44" Width="161" Click="btn_Click"/>
         <Button x:Name="btnbtmmid" Content="" HorizontalAlignment="Left" Margin="242,231,0,0" VerticalAlignment="Top" Height="44" Width="150" Background="#FF7077D8" Click="btn_Click"/>
         <Button x:Name="btnbtmright" Content="" Grid.Column="1" HorizontalAlignment="Left" Margin="10,231,0,0" VerticalAlignment="Top" Height="44" Width="148" Background="#FF7D83D9" Click="btn_Click"/>
-        <Button x:Name="Disable" Content="NewGame" HorizontalAlignment="Left" Margin="284,10,0,0" VerticalAlignment="Top" Height="34" Width="130" RenderTransformOrigin="-0.97,-5.599" Click="Disable_Click"/>
+        <Button x:Name="Disable" Content="New Game" HorizontalAlignment="Left" Margin="284,10,0,0" VerticalAlignment="Top" Height="34" Width="130" RenderTransformOrigin="-0.97,-5.599" Click="Disable_Click"/>
         <Label x:Name="lblTurn" Content="FunnyGuy" Margin="349,-75,120,0" VerticalAlignment="Top" RenderTransformOrigin="0.911,2.968" Grid.ColumnSpan="2" Height="42" FontSize="14" HorizontalAlignment="Center">
             <Label.Background>
                 <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
