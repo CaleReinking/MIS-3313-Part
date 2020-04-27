@@ -1,0 +1,20 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.WindowsDesktop">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+    <RootNamespace>WPF_Game_1._0</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="bg1-3921[1].png" />
+    <None Remove="Tic-Tac-Toe-Board-Online[1].jpg" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Resource Include="bg1-3921[1].png" />
+    <Resource Include="Tic-Tac-Toe-Board-Online[1].jpg" />
+  </ItemGroup>
+
+</Project>
